@@ -1,0 +1,14 @@
+Category,Level,Number,Control,Query
+Identity and Access Management,1,1.1,Ensure that Corporate Login Credentials are Used (Manual),"Use the GCP python client library and create python code that retrieves all user and service accounts, and validates that their email address is from the same domain as the organization domain."
+Identity and Access Management,1,1.2,Ensure that Multi-Factor Authentication is 'Enabled' for All Non-Service Accounts (Manual),"Use the GCP python client library and create python code that retrieves all user accounts, and checks if mfa is enabled or disabled"
+Identity and Access Management,2,1.3,Ensure that Security Key Enforcement is Enabled for All Admin Accounts (Manual),"Use the GCP python client library and create python code that retrieves all user accounts, and checks if mfa is enabled or disabled"
+Identity and Access Management,,,,
+Identity and Access Management,,,,
+Identity and Access Management,,,,
+Identity and Access Management,,,,
+Identity and Access Management,,,,
+Identity and Access Management,,,,
+Identity and Access Management,,,,
+Identity and Access Management,,,,
+Identity and Access Management,,,,
+Identity and Access Management,,,,
