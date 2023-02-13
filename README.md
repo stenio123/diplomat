@@ -1,5 +1,6 @@
 # Diplomat
 Open source repository of GPT-generated python code to test compliance controls against cloud environments.
+Work in progress.
 
 ## FAQ
 ### Why not use a testing framework, like Inspec or pytest?
