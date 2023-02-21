@@ -6,8 +6,8 @@ There are two main files:
 
  - extract_controls.py will generate a csv file based on an input pdf following CIS format
  - generate_stubs.py will take the generated csv file and create a folder containing one py file for each control
-
- The idea is to use this as the platform to create the different controls in automated way
+ 
+The idea is to use this as the platform to create the different controls in automated way. [Blog post with additional background](https://compellingcloud.substack.com/p/chatgpt-as-a-security-and-compliance).
 
  ## Adjusting the Code
  On extract_controls.py, you can change the pdf file name/location and the number of pages you want to extract.
