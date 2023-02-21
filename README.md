@@ -1,10 +1,24 @@
 # Diplomat
-Open source repository of GPT-generated python code to test compliance controls against cloud environments.
-Work in progress.
+Python code to extract CIS Benchmark controls from pdf automatically, using regex.
 
-## FAQ
-### Why not use a testing framework, like Inspec or pytest?
-These frameworks are great for testing code against a fixture (json, yaml) that emulates the expected scenarios. This works very well for testing pre-deployment stage, as a CICD guardcrail, but with Diplomat we want to test existing deployments, at runtime.
+## Overview
+There are two main files:
 
-### Why python?
-We could have used the native CLI's, REST API calls or another language. The reason for python is because according to documentation, python is CodexGPT strongest language.
+ - extract_controls.py will generate a csv file based on an input pdf following CIS format
+ - generate_stubs.py will take the generated csv file and create a folder containing one py file for each control
+
+ The idea is to use this as the platform to create the different controls in automated way
+
+ ## Adjusting the Code
+ On extract_controls.py, you can change the pdf file name/location and the number of pages you want to extract.
+ Current code works for AWS and GCP controls. For Kubernetes it struggled with some controls where the new line char was just before the page number, happy to merge a PR if submitted.
+
+## Execution
+```
+# Import dependencies
+pip install -r requirements.txt
+# Create csv
+python extract_controls.py
+# Crreate stubs from csv
+python generate_stubs.py
+```
